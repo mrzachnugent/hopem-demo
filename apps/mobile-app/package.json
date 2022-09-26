@@ -1,0 +1,27 @@
+{
+  "name": "@hopem/mobile-app",
+  "version": "1.0.0",
+  "main": "src/_app.tsx",
+  "scripts": {
+    "dev": "expo start --ios",
+    "dev:android": "expo start --android",
+    "start:clean": "expo start -c"
+  },
+  "dependencies": {
+    "@hopem/api": "*",
+    "expo": "~46.0.9",
+    "expo-status-bar": "~1.4.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.69.5",
+    "react-native-web": "~0.18.7"
+  },
+  "devDependencies": {
+    "@hopem/config": "*",
+    "@babel/core": "^7.12.9",
+    "@types/react": "~18.0.14",
+    "@types/react-native": "~0.69.1",
+    "typescript": "~4.3.5"
+  },
+  "private": true
+}

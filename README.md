@@ -6,13 +6,18 @@ This is an example repo related to the ideas I presented on September 29th 2022.
 
 - `landing-web`: a [Astro](https://astro.build) app
 - `web-app`: a [Next.js](https://nextjs.org) app
+- `mobile-app`: an [Expo](https://docs.expo.dev/) React Native app
 - `db`: the database schema (using [prisma](https://www.prisma.io)) with temporary db.sqlite
 - `ui-web`: a stub React component library shared by both `web-app` and `landing-web` applications
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`) and `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-### Initialize
+<img src="./__assets/db-landing_web-web_app-mobile_app.png"/>
+
+**To run the mobile apps, it is assumed that you have already ran react-native apps on your machine**
+
+## Initialize
 
 Install the dependencies for all apps and packages, run the following command from the root folder:
 
@@ -20,7 +25,7 @@ Install the dependencies for all apps and packages, run the following command fr
 yarn
 ```
 
-### Build
+## Build
 
 To build all apps and packages, run the following command from the root folder:
 
@@ -28,12 +33,41 @@ To build all apps and packages, run the following command from the root folder:
 yarn build
 ```
 
-### Develop
+## Develop all apps and packages with iOS mobile app
 
-To develop all apps and packages, run the following command from the root folder:
+Run the following command from the root folder:
 
 ```
 yarn dev
+```
+
+## Develop all apps and packages with Android mobile app
+
+In the `./mobile-apps/package.json`, Replace the line `6` with the following:
+
+```diff
+-      "dev": "expo start --ios",
++      "dev": "expo start --android",
+```
+
+Then, run the following command from the root folder:
+
+```
+yarn dev
+```
+
+## Develop an individual app with the packages in its dependencies
+
+Run the following command from the root folder with the apps initials instead of `<initials>`:
+
+```
+yarn dev:<initials>
+```
+
+Landing-web example:
+
+```
+yarn dev:lw
 ```
 
 ### Remote Caching
@@ -55,7 +89,7 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 npx turbo link
 ```
 
-## Useful Links
+### Useful Turborepo Links
 
 Learn more about the power of Turborepo:
 

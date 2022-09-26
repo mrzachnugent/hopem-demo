@@ -14,8 +14,8 @@
     "@astrojs/react": "^1.1.4",
     "@hopem/ui-web": "*",
     "astro": "^1.3.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@hopem/config": "*"

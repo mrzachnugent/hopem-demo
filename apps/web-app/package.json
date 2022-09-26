@@ -15,8 +15,8 @@
     "@trpc/next": "^10.0.0-proxy-beta.7",
     "@trpc/react": "^10.0.0-proxy-beta.7",
     "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
