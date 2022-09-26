@@ -1,0 +1,11 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button } from '../components';
+---
+
+<Layout title='Landing app'>
+  <main>
+    <div><code>https://www.mywebsite.com</code></div>
+    <Button client:load />
+  </main>
+</Layout>

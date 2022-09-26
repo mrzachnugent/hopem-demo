@@ -1,0 +1,4 @@
+{
+  "extends": "@hopem/config/tsconfig/base.json",
+  "include": ["index.ts"]
+}

@@ -1,5 +1,5 @@
 {
-  "name": "hopem",
+  "name": "hopem-demo",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -9,8 +9,9 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "dev:lw": "turbo run dev --filter=landing-web",
+    "dev:wa": "turbo run dev --filter=web-app",
+    "dev:ma": "turbo run dev --filter=mobile-app"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
