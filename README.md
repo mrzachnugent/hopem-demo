@@ -6,8 +6,9 @@ This is an example repo related to the ideas I presented on September 29th 2022.
 
 - `landing-web`: a [Astro](https://astro.build) app
 - `web-app`: a [Next.js](https://nextjs.org) app
-- `mobile-app`: an [Expo](https://docs.expo.dev/) React Native app
+- `mobile-app`: an [Expo](https://docs.expo.dev) React Native app
 - `db`: the database schema (using [prisma](https://www.prisma.io)) with temporary db.sqlite
+- `api`: the [tRPC](https://trpc.io) router and context for end-to-end typesafety.
 - `ui-web`: a stub React component library shared by both `web-app` and `landing-web` applications
 - `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`) and `tsconfig.json`s used throughout the monorepo
 
