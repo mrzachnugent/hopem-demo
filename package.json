@@ -14,7 +14,7 @@
     "dev:ma": "turbo run dev --filter=mobile-app"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
+    "config": "*",
     "prettier": "latest",
     "turbo": "latest"
   },

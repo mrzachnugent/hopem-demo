@@ -3,13 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "main": "eslint-custom-config/index.js",
-  "types": "./types/index.tsx",
   "files": [
     "tsconfig/base.json",
     "tsconfig/nextjs.json",
     "tsconfig/react-library.json"
   ],
-  "license": "MIT",
   "dependencies": {
     "eslint": "^7.23.0",
     "eslint-config-next": "^12.0.8",
