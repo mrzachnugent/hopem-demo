@@ -11,7 +11,7 @@ export default function WebApp() {
       </div>
       <Button />
       <h1 style={{ textAlign: 'center' }}>
-        Data for end-to-end type safe serverless functions:
+        Data from end-to-end type safe serverless functions:
       </h1>
       {postQuery.data && (
         <div
